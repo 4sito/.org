@@ -1,7 +1,6 @@
 import 'package:_4sito/dotted_3d_text.dart';
 import 'package:_4sito/shader.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 
 void main() {
   runApp(const MyApp());
@@ -59,14 +58,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return SpaceShader(
-      child: Center(
-        child: SpaceShader(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[ThreeDTextPage()],
-          ),
-        ),
+    return Center(
+      child: SpaceShader(
+        child: ThreeDTextPage(),
+        // child: SizedBox(),
       ),
     );
   }

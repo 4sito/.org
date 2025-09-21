@@ -2,11 +2,11 @@
 #include <flutter/runtime_effect.glsl>
 // precision highp float;
 
-#define iterations 14
+#define iterations 18
 #define formuparam 0.53
 
 #define volsteps 10
-#define stepsize 0.15
+#define stepsize 0.1
 
 #define zoom   0.800
 #define tile   0.850
