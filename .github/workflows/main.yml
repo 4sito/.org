@@ -11,5 +11,6 @@ jobs:
     uses: ChangaNetwork/Workflows/.github/workflows/flutter-build-web.yml@main
     with:
       publish_branch: web-${{ github.ref_name }}
+      wasm: true
     secrets:
       github_x_token: ${{ secrets.GITHUB_TOKEN }}
